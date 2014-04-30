@@ -7,3 +7,6 @@ build/
 
 local.properties
 *.swp
+
+*.iml
+.idea/
