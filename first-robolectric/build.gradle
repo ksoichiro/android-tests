@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+              url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.squareup.gradle:gradle-android-test-plugin:0.9.1-SNAPSHOT'
+    }
+}
+apply plugin: 'android'
+apply plugin: 'android-test'
+
+repositories {
+    mavenCentral()
+    maven {
+          url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+android {
+    compileSdkVersion 'android-17'
+    buildToolsVersion '19.0.3'
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 17
+    }
+
+    sourceSets {
+        instrumentTest.setRoot('src/test')
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+        }
+    }
+}
+dependencies {
+  testCompile 'junit:junit:4.10'
+  testCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
+  testCompile 'com.squareup:fest-android:1.0.+'
+  instrumentTestCompile 'junit:junit:4.10'
+  instrumentTestCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
+  instrumentTestCompile 'com.squareup:fest-android:1.0.+'
+}

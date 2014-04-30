@@ -1,11 +1,9 @@
-TransitionSample
-====
+transition
+==========
 
-Androidのサンプルプロジェクトです。
-ActivityとFragmentを使った画面遷移と、JUnitでの自動テストを含んでいます。
+Android sample project of screen transition using `Activity` and `Fragment`.  
+This includes unit testing codes of JUnit.
 
-このフォルダに含まれているTransitionSample, TransitionSampleTestは
-Eclipseのプロジェクトになっています。
-[Existing Project into workspace]でインポートしてご利用ください。
-
-Copyright (c) 2013 Soichiro Kashima
+The projects `TransitionSample` and `TransitionSampleTest` are
+projects of Eclipse.
+To try these tests, import them from the import menu [Existing Project into workspace].
