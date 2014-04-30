@@ -1,8 +1,7 @@
-AndroidUnitTestSamples
-====
+android-tests
+=============
 
-AndroidのUnitTestのサンプル集です。
-
-各フォルダはテスト対象アプリとテストコードのEclipseプロジェクトがセットになっています。
+Collection of Android app tests.  
+Each folders are pairs of sample app codes and test codes.
 
 Copyright (c) 2013 Soichiro Kashima
