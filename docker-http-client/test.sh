@@ -1,7 +1,6 @@
 #!/bin/bash
 
 PROJECT_ROOT=$(cd $(dirname $0) && pwd)
-echo "Testing on ${PROJECT_ROOT}..."
 
 pushd web/ > /dev/null 2>&1
 
