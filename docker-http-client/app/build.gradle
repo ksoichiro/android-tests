@@ -25,7 +25,8 @@ android {
 
     productFlavors {
         integration {
-            buildConfigField "String", "REMOTE_URL", "\"http://localhost:8080\""
+            ext.mockServer = System.env['MOCK_PORT_8080_TCP_ADDR']
+            buildConfigField "String", "REMOTE_URL", "\"http://${ext.mockServer}:8080\""
         }
         production {
         }

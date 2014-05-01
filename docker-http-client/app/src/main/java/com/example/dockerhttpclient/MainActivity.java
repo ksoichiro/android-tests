@@ -32,7 +32,7 @@ public class MainActivity extends Activity
     @Override
     public void onComplete(String result) {
         if (TextUtils.isEmpty(result)) {
-            ((TextView) findViewById(R.id.text)).setText("Failure");
+            ((TextView) findViewById(R.id.text)).setText("Failed to access to server");
             return;
         }
         int number = parseResult(result);
